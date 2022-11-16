@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nosifer&family=Yellowtail&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  background-color: #F0EFED;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smooth: antialiased;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,9 @@
+.MuiTypography-body1 {
+    font-weight: 500 !important;
+    font-size: 1.4em !important;
+}
+
+.MuiListItem-root {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

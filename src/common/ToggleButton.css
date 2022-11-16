@@ -1,0 +1,10 @@
+.ToggleButton {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #042825;
+    float: right;
+    margin-right: 3em;
+    z-index: 9999;
+}

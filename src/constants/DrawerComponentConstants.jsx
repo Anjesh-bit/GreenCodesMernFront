@@ -1,0 +1,3 @@
+export const ON_DRAWER_OPEN = "ON_DRAWER_OPEN";
+export const ON_DRAWER_CLOSE = "ON_DRAWER_CLOSE";
+export const ON_DRAWER_FAIL = "ON_DRAWER_FAIL";

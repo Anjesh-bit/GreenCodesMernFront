@@ -1,0 +1,4 @@
+.imageContainer:hover .onHoverimages {
+    visibility: visible;
+    opacity: 0.8;
+}
