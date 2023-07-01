@@ -19,8 +19,9 @@ const adminLoginActions = (email, password) => async (dispatch) => {
         }
         const { data } = await Login.post("greenApi/admin/login", { email, password }, config);
         dispatch({ type: ADMIN_LOGIN_SUCCESS, payload: data });
+        
         const Logintoken = data.token;
-        auth(Logintoken, data);
+        auth(Logintoken, data);       
     }
     catch (error) {
         dispatch(
