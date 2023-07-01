@@ -4,10 +4,12 @@ import { deleteCookies } from "../utils/Cookie";
 import { deleteLocalStorage } from "../utils/Localstorage";
 import { auth } from "../utils/Auth";
 import { ADMIN_LOGIN_START, ADMIN_LOGIN_FAIL, ADMIN_LOGIN_SUCCESS, ADMIN_LOGOUT } from "../constants/AdminLoginConstants";
+
 const Login = axios.create({
     baseURL: "http://localhost:5000/"
 })
-const AdminLoginActions = (email, password) => async (dispatch) => {
+
+const adminLoginActions = (email, password) => async (dispatch) => {
     try {
         dispatch({ type: ADMIN_LOGIN_START })
         const config = {
@@ -29,13 +31,14 @@ const AdminLoginActions = (email, password) => async (dispatch) => {
                     : error.message,
             })
     }
-
 }
-const AdminLogoutActions = () => (dispatch) => {
+
+
+const adminLogoutActions = () => (dispatch) => {
     deleteCookies("token");
     deleteLocalStorage("loginData");
     deleteLocalStorage("userInfo");
     dispatch({ type: ADMIN_LOGOUT })
 }
 
-export { AdminLoginActions, AdminLogoutActions };
+export { adminLoginActions, adminLogoutActions };
