@@ -20,8 +20,10 @@ import {
 
 const Blog = axios.create({
     baseURL: "http://localhost:5000/"
-})
-const BlogsSaveActions = (formData) => async (dispatch) => {
+});
+
+
+const blogsSaveActions = (formData) => async (dispatch) => {
 
     try {
         dispatch({ type: ON_BLOGS_INITIAL_REQUEST });
@@ -30,7 +32,7 @@ const BlogsSaveActions = (formData) => async (dispatch) => {
             formData,
         );
         console.log(data);
-        dispatch({ type: ON_BLOGS_SUCESS, payload: data })
+        dispatch({ type: ON_BLOGS_SUCESS, payload: data });
 
     }
     catch (error) {
@@ -43,11 +45,11 @@ const BlogsSaveActions = (formData) => async (dispatch) => {
     }
 
 };
-const BlogsFindAll = () => async (dispatch) => {
+
+const blogsFindAll = ()=> async (dispatch) => {
     try {
         dispatch({ type: ON_FETCH_ALL_INITIAL });
         const { data } = await Blog.get("/greenApi/admin/blogsAllData")
-
         dispatch({ type: ON_FETCH_ALL_SUCCESS, payload: data });
     }
     catch (error) {
@@ -57,10 +59,11 @@ const BlogsFindAll = () => async (dispatch) => {
                 ? error.response.data.message
                 : error.message,
         });
-
     }
 }
-const BlogsFindById = (id) => async (dispatch) => {
+
+
+const blogsFindById = (id) => async (dispatch) => {
     try {
         dispatch({ type: ON_FETCH_ONE_INITIAL });
         const { data } = await Blog.get(`greenApi/admin/${id}`);
@@ -75,7 +78,8 @@ const BlogsFindById = (id) => async (dispatch) => {
         });
     }
 }
-const UpdateBlogs = (id, formData) => async (dispatch) => {
+
+const updateBlogs = (id, formData) => async (dispatch) => {
     try {
         dispatch({ type: ON_UPDATE_INTIAL });
         const { data } = await Blog.put(`greenApi/admin/${id}`, formData)
@@ -92,7 +96,7 @@ const UpdateBlogs = (id, formData) => async (dispatch) => {
     }
 }
 
-const DeleteBlogs = (id) => (dispatch) => {
+const deleteBlogs = (id) => (dispatch) => {
     try {
         dispatch({ type: ON_DELETE_INITIAL });
         const { data } = Blog.delete(`greenApi/admin/${id}`);
@@ -107,4 +111,4 @@ const DeleteBlogs = (id) => (dispatch) => {
         });
     }
 }
-export { BlogsSaveActions, BlogsFindAll, BlogsFindById, UpdateBlogs, DeleteBlogs };
+export { blogsSaveActions, blogsFindAll, blogsFindById, updateBlogs, deleteBlogs };
