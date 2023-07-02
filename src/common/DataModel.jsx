@@ -30,29 +30,23 @@ import about4 from './About/about44.jpg';
 import about5 from './About/about3.jpg';
 import greenCodesIcon from './Icons/GreenLogo.png'
 
-export const GreenIllustrations = [
+export const greenIllustrations = [
     development,
     hosting,
     design,
     seo,
     test,
-
-
 ]
-export const GreenLogo = greenCodesIcon;
 
-export const GreentopSection = [
+export const greenLogo = greenCodesIcon;
+
+export const greentopSection = [
     { greenHead: "Let's automate ourselves " },
     { greenHead: "with" },
     { greenHead: "Greencodes nepal" },
-
-
 ]
 
-
-
-
-export const GreenTeamsInfo = [
+export const greenTeamsInfo = [
     { select: "teams", image: sresta, name: "Sresta Malla Thakuri", info: "Quality Assurance(QA)" },
     { select: "teams", image: anjesh, name: "Anjesh Thapa", info: "Web Developer and Designer" },
     { select: "teams", image: pratik, name: "Pratik Karki", info: "Hiring Manager(HR)" },
@@ -65,7 +59,7 @@ export const GreenTeamsInfo = [
 
 ]
 
-export const GreenProjectImages = [
+export const greenProjectImages = [
     {
         select: 'all',
         all: bradmoreBuilder,
@@ -107,7 +101,6 @@ export const GreenProjectImages = [
         wordpress: 'wordpress',
         route: "NorthWestHillStorage",
         title: "MonsterWebPlanner",
-        id: 3,
         paragraph:
             'This is a huge school management software developed in Codeigniter. All the aspects of school elements are addressed in this application. This site is under marketing division now and ready to be launched. We greencodes, completely handled it from requirement analysis to UI design. It took us about 1 year to finally get it ready. Some feature addition and bug fixes are under progress as well. The main challenging task was to handle hundreds of different user schemas. A relational database with fully normalized schema and its handling to frontend led us the perfection and confidence that we can develop any size of application. We never missed the flow of data so never got into problem of data asynchronization. We are proud of Mr. Manoj Roka for such an amazing project management handling and flow follow in every step of development.',
         client: 'Darryl Fresne',
@@ -192,18 +185,13 @@ export const GreenProjectImages = [
 
 ]
 
-
-
-export const GreenAbout = [
-
+export const greenAbout = [
     "Speculating Us?",
     "Team with upsurge professionalism, and  culminated with copious projects ",
     "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame."
-
-
 ]
 
-export const GreenServices = [
+export const greenServices = [
     "Web Development",
     "Unique and Consistent web design",
     "Web Hosting & Security",
@@ -212,12 +200,9 @@ export const GreenServices = [
     "Design to meet your requirements",
     "Seo & Smm",
     "Optimal results for search page"
-
-
 ]
 
 export const contactModel = [
-
     "CONTACT",
     "Get in Touch-Let's jam together",
     "ADDRESS",
@@ -233,14 +218,13 @@ export const infoAbout = [
     "Green Codes is a team of professional, motivated and highly experienced developers from Nepal.",
     "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame. Hence we are expertise in the field of creative Website Designing and Search Engine Optimization(SEO). As we are young and energetic technical savvies and hungry for latest innovation technologies on web, as a result we will apply all the technology evolution strategies in our projects.",
     "Our smart work will often describe who we are!We are providing quality website development in different Content Management Systems (CMS) technologies around the globe. Therefore we work for the client’s satisfaction and will stand with you to grow your business organically. Running a business not only requires hard work but also requires effective smart work. We shall do both the works for an unbelievable cost!",
-
 ]
 
-export const FormValues = {
+export const formValues = {
     client_fname: "", client_lname: "", client_email: "", client_number: "", client_message: ""
 }
 
-export const ContErrorMessage = {
+export const contErrorMessage = {
     error_fname: "First name is required",
     error_lname: "Second name is required",
     error_email: "Email  is required",
@@ -248,32 +232,32 @@ export const ContErrorMessage = {
     error_message: "MessageI is required",
 
 }
-export const LoginValues = {
+export const loginValues = {
     client_email: "",
     client_password: ""
 }
 
-export const Listdata = {
+export const listData = {
     home: "Home",
     about: "About",
     services: "Services",
     projects: "Projects",
     contact: "Contact"
 }
-export const TopbarImages =
+export const topBarImages =
     [
         about1,
         about3
     ]
 
-export const AboutImages = [
+export const aboutImages = [
     about1,
     about2,
     about3,
     about4,
     about5
 ]
-export const BlogsModel = {
+export const blogsModel = {
     title: "",
     catagories: ""
 }
