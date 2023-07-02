@@ -3,7 +3,7 @@ import { MODAL_OPEN } from '../constants/ModelConstants';
 import { MODAL_ERROR } from '../constants/ModelConstants';
 import { MODAL_CLOSE } from '../constants/ModelConstants';
 
-export const ModalOpen = () => (dispatch) => {
+export const modalOpen = () => (dispatch) => {
     try {
         dispatch({ type: MODAL_OPEN })
     }
@@ -13,7 +13,7 @@ export const ModalOpen = () => (dispatch) => {
 
 }
 
-export const ModalClose = () => (dispatch) => {
+export const modalClose = () => (dispatch) => {
 
     try {
         dispatch({ type: MODAL_CLOSE })
