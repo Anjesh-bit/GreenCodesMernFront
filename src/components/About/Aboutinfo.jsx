@@ -85,6 +85,7 @@ const handlePrev = () => {
                             </CardContent>
                         </Card>
                     </Grid>
+                    
                     <Grid items md={6} sm={6} xs={12}>
                         <Card elevation={0}>
                             <CardContent elevation={0} style={{ background: "#F0EFED" }}>
@@ -113,8 +114,6 @@ const handlePrev = () => {
                 </Grid>
             </motion.div>
         </AnimatePresence >
-
-
     )
 }
 export default Aboutinfo;
