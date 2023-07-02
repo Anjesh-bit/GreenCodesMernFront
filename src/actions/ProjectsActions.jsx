@@ -3,7 +3,7 @@ import React from "react";
 import { PROJECT_DATA_FAIL } from "../constants/ProjectsConstants";
 import { PROJECT_DATA_SUCCESS } from "../constants/ProjectsConstants";
 
-const ProjectsActions = (data) => (dispatch) => {
+const projectsActions = (data) => (dispatch) => {
     try {
         dispatch({ type: PROJECT_DATA_SUCCESS, payload: data })
     }
@@ -12,4 +12,4 @@ const ProjectsActions = (data) => (dispatch) => {
     }
 }
 
-export default ProjectsActions;
+export default projectsActions;
