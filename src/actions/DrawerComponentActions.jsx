@@ -1,7 +1,7 @@
 import React from "react";
 import { ON_DRAWER_OPEN, ON_DRAWER_FAIL } from "../constants/DrawerComponentConstants";
 
-const DrawerComponentActions = (anchorDrawer, open) => (dispatch) => {
+const drawerComponentActions = (anchorDrawer, open) => (dispatch) => {
     try {
         dispatch({ type: ON_DRAWER_OPEN, [anchorDrawer]: open });
     }
@@ -14,6 +14,4 @@ const DrawerComponentActions = (anchorDrawer, open) => (dispatch) => {
         })
     }
 }
-
-
-export { DrawerComponentActions }
+export { drawerComponentActions }
