@@ -1,8 +1,9 @@
-import React from "react";
+oimport React from "react";
 import { Grid, Paper, makeStyles, Card, CardContent, Typography, CardActions, Button, withStyles, useMediaQuery, useTheme } from "@material-ui/core";
 import { GreenAbout } from "../../common/DataModel";
 import cn from 'classnames';
 import { useSelector } from "react-redux";
+
 const useStyles = makeStyles({
     aboutPaper: {
         color: "#042825",
@@ -19,6 +20,7 @@ const useStyles = makeStyles({
 
     }
 })
+
 const StyledButton = withStyles({
     root: {
         background: "transparent",
