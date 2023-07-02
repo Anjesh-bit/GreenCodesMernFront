@@ -8,6 +8,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { AboutImages } from "../../common/DataModel";
 import { useEffect } from "react";
+
 const useStyles = makeStyles({
     root: {
         display: "flex",
@@ -40,6 +41,7 @@ const useStyles = makeStyles({
         justifyContent: "space-between"
     }
 })
+
 const Aboutinfo = () => {
     const classes = useStyles();
     const [indexAbout, setIndexAbout] = useState(0);
@@ -51,17 +53,15 @@ const Aboutinfo = () => {
         else if (indexAbout === AboutImages.length - 1) {
             setIndexAbout(0);
         }
-
     }
-    const handlePrev = () => {
+    
+const handlePrev = () => {
         if (indexAbout > 0) {
             setIndexAbout(indexAbout - 1)
-
         }
         else {
             setIndexAbout(AboutImages.length - 1)
         }
-
     }
 
     return (
