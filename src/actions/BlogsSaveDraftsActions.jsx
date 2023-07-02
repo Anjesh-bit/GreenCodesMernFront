@@ -17,10 +17,12 @@ import {
     ON_UPDATE_DRAFTS_SUCCESS,
     ON_UPDATE_DRAFTS_FAIL,
 } from '../constants/BlogsSaveDraftsConstant';
+
 const Blog = axios.create({
     baseURL: "http://localhost:5000/"
-})
-const BlogsSaveDraftsActions = (formData) => async (dispatch) => {
+});
+
+const blogsSaveDraftsActions = (formData) => async (dispatch) => {
 
     try {
         dispatch({ type: ON_BLOGS_DRAFTS_INITIAL_REQUEST });
@@ -42,7 +44,8 @@ const BlogsSaveDraftsActions = (formData) => async (dispatch) => {
     }
 
 };
-const BlogsDraftsFindAll = () => async (dispatch) => {
+
+const blogsDraftsFindAll = () => async (dispatch) => {
     try {
         dispatch({ type: ON_FETCH_ALL_DRAFTS_INITIAL });
         const { data } = await Blog.get("greenApi/admin/blogsDraftFindall")
@@ -58,8 +61,9 @@ const BlogsDraftsFindAll = () => async (dispatch) => {
         });
 
     }
-}
-const BlogsDraftsFindById = (id) => async (dispatch) => {
+};
+
+const blogsDraftsFindById = (id) => async (dispatch) => {
     try {
         dispatch({ type: ON_FETCH_ONE_DRAFTS_INITIAL });
         const { data } = await Blog.get(`greenApi/admin/drafts/${id}`);
@@ -73,8 +77,9 @@ const BlogsDraftsFindById = (id) => async (dispatch) => {
                 : error.message,
         });
     }
-}
-const UpdateDraftsBlogs = (id, formData) => async (dispatch) => {
+};
+
+const updateDraftsBlogs = (id, formData) => async (dispatch) => {
     try {
         dispatch({ type: ON_UPDATE_DRAFTS_INTIAL });
         const { data } = await Blog.put(`greenApi/admin/drafts/${id}`, formData)
@@ -89,9 +94,9 @@ const UpdateDraftsBlogs = (id, formData) => async (dispatch) => {
                 : error.message,
         });
     }
-}
+};
 
-const DeleteDraftsBlogs = (id) => (dispatch) => {
+const deleteDraftsBlogs = (id) => (dispatch) => {
     try {
         dispatch({ type: ON_DELETE_DRAFTS_INITIAL });
         const { data } = Blog.delete(`greenApi/admin/drafts/${id}`);
@@ -105,5 +110,5 @@ const DeleteDraftsBlogs = (id) => (dispatch) => {
                 : error.message,
         });
     }
-}
-export { BlogsSaveDraftsActions, BlogsDraftsFindAll, BlogsDraftsFindById, UpdateDraftsBlogs, DeleteDraftsBlogs };
+};
+export { blogsSaveDraftsActions, blogsDraftsFindAll, blogsDraftsFindById, updateDraftsBlogs, deleteDraftsBlogs };
