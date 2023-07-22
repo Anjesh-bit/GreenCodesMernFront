@@ -1,15 +1,14 @@
 .listItems {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    list-style-type: none;
-    color: #ddd;
-    opacity: 0.9;
-    font-size: 0.9vw;
-    font-weight: unset;
-    width: 30%;
-    margin-left: auto;
-    margin-top: 0;
-    padding-top: 1em;
-
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+  color: #ddd;
+  opacity: 0.9;
+  font-size: 0.9vw;
+  font-weight: unset;
+  width: 30%;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 1em;
 }

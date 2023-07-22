@@ -1,5 +1,7 @@
 import BlogsView from "../admin/BlogsSection.jsx";
+
 const BlogsViewPage = () => {
-    return (<BlogsView />)
-}
+  return <BlogsView />;
+};
+
 export default BlogsViewPage;

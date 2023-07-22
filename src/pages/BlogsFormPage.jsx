@@ -1,6 +1,8 @@
 import React from "react";
 import BlogsForm from "../admin/BlogsForm";
+
 const BlogsFormPage = () => {
-    return (<BlogsForm />)
-}
+  return <BlogsForm />;
+};
+
 export default BlogsFormPage;

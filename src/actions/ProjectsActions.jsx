@@ -1,5 +1,3 @@
-
-import React from "react";
 import { PROJECT_DATA_FAIL } from "../constants/ProjectsConstants";
 import { PROJECT_DATA_SUCCESS } from "../constants/ProjectsConstants";
 

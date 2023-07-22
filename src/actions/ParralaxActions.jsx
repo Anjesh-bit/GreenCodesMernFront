@@ -1,4 +1,3 @@
-import React from "react";
 import { SCROLL_X, SCROLL_X_ERROR } from "../constants/ParallexConstants";
 
 const scrollY = (pageScrollX) => (dispatch) => {
@@ -9,4 +8,5 @@ const scrollY = (pageScrollX) => (dispatch) => {
         dispatch({ type: SCROLL_X_ERROR, payload: e.response.data.message ? e.response.data.message : e.message })
     }
 }
+
 export default scrollY;

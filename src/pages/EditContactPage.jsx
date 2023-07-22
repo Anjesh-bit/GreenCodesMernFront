@@ -2,8 +2,7 @@ import React from "react";
 import EditContact from "../admin/EditContact";
 
 const EditContactPage = () => {
-    return (
-        <EditContact />
-    )
-}
+  return <EditContact />;
+};
+
 export default EditContactPage;

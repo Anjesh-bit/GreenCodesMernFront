@@ -1,6 +1,7 @@
 import Login from "../admin/Login";
 
 const LoginPage = () => {
-    return (<Login />)
-}
+  return <Login />;
+};
+
 export default LoginPage;

@@ -1,7 +1,7 @@
 import ProfileSection from "../admin/ProfileSection";
+
 const ProfileSectionPage = () => {
-    return (
-        <ProfileSection />
-    )
-}
+  return <ProfileSection />;
+};
+
 export default ProfileSectionPage;

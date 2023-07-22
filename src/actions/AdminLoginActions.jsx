@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import { deleteCookies } from "../utils/Cookie";
 import { deleteLocalStorage } from "../utils/Localstorage";
@@ -22,9 +21,12 @@ const adminLoginActions = (adminEmail, adminPassword) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await Login.post("/greenApi/admin/login", { adminEmail, adminPassword }, config);
+    const { data } = await Login.post(
+      "/greenApi/admin/login",
+      { adminEmail, adminPassword },
+      config
+    );
     dispatch({ type: ADMIN_LOGIN_SUCCESS, payload: data });
-
     const loginToken = data.token;
     auth(loginToken, data);
   } catch (error) {

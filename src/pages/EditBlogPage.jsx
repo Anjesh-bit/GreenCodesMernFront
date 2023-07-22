@@ -1,5 +1,7 @@
 import EditBlogs from "../admin/EditBlogs";
+
 const EditBlogsPage = () => {
-    return (<EditBlogs />)
-}
+  return <EditBlogs />;
+};
+
 export default EditBlogsPage;

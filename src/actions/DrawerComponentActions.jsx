@@ -14,4 +14,5 @@ const drawerComponentActions = (anchorDrawer, open) => (dispatch) => {
         })
     }
 }
+
 export { drawerComponentActions }
