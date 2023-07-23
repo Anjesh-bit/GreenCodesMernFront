@@ -9,21 +9,14 @@ import {
   useTheme,
 } from "@material-ui/core";
 import { greenProjectImages } from "../../common/DataModel";
-import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { motion, AnimatePresence, animate } from "framer-motion";
-import ProjectsActions from "../../actions/ProjectsActions";
-import { Transition } from "react-transition-group";
-import { useSelector } from "react-redux";
+import { motion } from "framer-motion";
 import { defaaultTransition } from "../../utils/Transition";
-import { Grow } from "@material-ui/core";
 import cn from "classnames";
 import { useEffect } from "react";
 
-let GreenImages;
-let GreenTitle;
+let greenImages;
+let greenTitle;
 let timeoutHandler;
 
 const useStyles = makeStyles({
@@ -99,10 +92,10 @@ const Project = () => {
   const [showAnim, setAnim] = useState(false);
 
   useEffect(() => {
-    GreenImages = greenProjectImages.filter((images) => {
+    greenImages = greenProjectImages.filter((images) => {
       return images.select === "all";
     });
-    GreenTitle = greenProjectImages.filter((title) => {
+    greenTitle = greenProjectImages.filter((title) => {
       return title.pageTitle === "All Projects";
     });
     setAnim(false);
@@ -129,50 +122,50 @@ const Project = () => {
     switch (activeStep) {
       case 0:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.ci === "ci";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Codeigniter";
         });
         break;
 
       case 1:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.ecommerce === "ecommerce";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "E-Commerce";
         });
         break;
 
       case 2:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.magento === "magento";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Magento";
         });
         break;
 
       case 3:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.drupal === "drupal";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Drupal";
         });
         break;
 
       case 4:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.wordpress === "wordpress";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Wordpress";
         });
         break;
@@ -187,50 +180,50 @@ const Project = () => {
     switch (activeStep) {
       case 1:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.select === "all";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "All Projects";
         });
         break;
 
       case 2:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.ci === "ci";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Codeigniter";
         });
         break;
 
       case 3:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.ecommerce === "ecommerce";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "E-Commerce";
         });
         break;
 
       case 4:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.magento === "magento";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Magento";
         });
         break;
 
       case 5:
         animationHandle();
-        GreenImages = greenProjectImages.filter((images) => {
+        greenImages = greenProjectImages.filter((images) => {
           return images.drupal === "drupal";
         });
-        GreenTitle = greenProjectImages.filter((title) => {
+        greenTitle = greenProjectImages.filter((title) => {
           return title.pageTitle === "Drupal";
         });
         break;
@@ -272,7 +265,7 @@ const Project = () => {
       >
         Latest Projects
       </Typography>
-      {GreenTitle?.map((data, index) => (
+      {greenTitle?.map((data, index) => (
         <div key={Math.random() + index} className={cn(classes.pageTitle)}>
           <div>
             <h2 style={title}>{data.pageTitle}</h2>
@@ -314,7 +307,7 @@ const Project = () => {
           className={cn(classes.greenimagesdiv)}
           xs={12}
         >
-          {GreenImages?.map((data, index) => (
+          {greenImages?.map((data, index) => (
             <div
               key={Math.random()}
               className={classes.imageContainer}

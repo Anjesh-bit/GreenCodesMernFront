@@ -24,14 +24,14 @@ const useStyles = makeStyles({
     alignItems: "center",
     background: "#202221",
   },
-  TopGridContainer: {
+  topGridContainer: {
     background: "#ccc",
     borderRadius: "20px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
-  TopCardContainer: {
+  topCardContainer: {
     height: "auto",
     background: "#262627",
     color: "#F5F5F5",
@@ -59,7 +59,7 @@ const styledButton = {
   color: "#F5F5F5",
 };
 
-const CardContentText = {
+const cardContentText = {
   title: "403",
   denied: "Permission Denied",
   permission: "You don't have permission to access the requested page.",
@@ -71,27 +71,27 @@ const Unauthorized = (props) => {
 
   return (
     <Box className={cs(classes.box)}>
-      <Grid container className={cs(classes.TopGridContainer)}>
+      <Grid container className={cs(classes.topGridContainer)}>
         <Box p={10}>
           <Paper elevation={1}>
-            <Card className={cs(classes.TopCardContainer)} elevation={0}>
+            <Card className={cs(classes.topCardContainer)} elevation={0}>
               <CardContent>
                 <Typography
                   variant="h5"
                   component="h3"
                   className={cs(classes.topCardDenied)}
                 >
-                  {CardContentText.title}
+                  {cardContentText.title}
                 </Typography>
                 <Typography className={cs(classes.topCardAccess)} gutterBottom>
-                  {CardContentText.denied}
+                  {cardContentText.denied}
                 </Typography>
 
                 <Typography
                   className={cs(classes.topCardPermission)}
                   gutterBottom
                 >
-                  <i>{CardContentText.permission}</i>
+                  <i>{cardContentText.permission}</i>
                 </Typography>
                 <CardActions>
                   <Button

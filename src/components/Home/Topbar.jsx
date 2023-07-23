@@ -77,8 +77,8 @@ const Topbar = () => {
           transition: "all 0.8s linear",
         }}
       ></div>
-      <div className="Logodiv">
-        <img src={greenLogo} alt="GreenCodesLogo" className="GreenLogo" />
+      <div className="logodiv">
+        <img src={greenLogo} alt="GreenCodesLogo" className="greenLogo" />
       </div>
       <Paper
         className={cn(classes.topbarMenu)}

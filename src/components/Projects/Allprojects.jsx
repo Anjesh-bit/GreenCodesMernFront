@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import {
   Grid,
-  Box,
   Typography,
   Card,
   CardContent,
-  Paper,
   CardMedia,
-  useMediaQuery,
-  useTheme,
   Button,
 } from "@material-ui/core";
 import cn from "classnames";
@@ -46,41 +42,6 @@ const useStyles = makeStyles({
     paddingBottom: "1em",
   },
 });
-
-var settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-
-        dots: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 
 const StyledButton = withStyles({
   root: {

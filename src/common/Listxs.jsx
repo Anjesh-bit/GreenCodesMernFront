@@ -1,16 +1,18 @@
 import React from "react";
-import { Listdata } from "./DataModel";
+import { listData } from "./DataModel";
 import "./Listxs.css";
 
 const Listxs = () => {
+  const { home, about, services, projects, contact } = listData;
+
   return (
     <div>
       <ul className="listItems">
-        <li>{Listdata.home}</li>
-        <li>{Listdata.about}</li>
-        <li>{Listdata.services}</li>
-        <li>{Listdata.projects}</li>
-        <li>{Listdata.contact}</li>
+        <li>{home}</li>
+        <li>{about}</li>
+        <li>{services}</li>
+        <li>{projects}</li>
+        <li>{contact}</li>
       </ul>
     </div>
   );

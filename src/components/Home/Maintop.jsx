@@ -6,7 +6,6 @@ import {
   Grid,
   Button,
   withStyles,
-  Typography,
   useTheme,
   useMediaQuery,
 } from "@material-ui/core";
@@ -17,7 +16,7 @@ import "./MainTop.css";
 import { topBarImages } from "../../common/DataModel";
 
 const useStyles = makeStyles({
-  GreenParas: {
+  greenParas: {
     alignSelf: "center",
     marginLeft: "auto",
     marginRight: "2em",
@@ -34,7 +33,7 @@ const useStyles = makeStyles({
   },
 });
 
-const GreenHeadings = {
+const greenHeadings = {
   display: "block",
   color: "#ddd",
   opacity: 0.9,
@@ -59,7 +58,6 @@ export const StyledButton = withStyles({
 })(Button);
 
 const Maintop = () => {
-  const classes = useStyles();
   const setOffsetY = useSelector((state) => state.parralx.scrollX);
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
@@ -78,7 +76,7 @@ const Maintop = () => {
             className="box"
           >
             {greentopSection?.map((data, index) => (
-              <h1 key={index} style={GreenHeadings} className="GreenHeadings">
+              <h1 key={index} style={greenHeadings} className="greenHeadings">
                 {data.greenHead}
               </h1>
             ))}
@@ -89,7 +87,7 @@ const Maintop = () => {
                 ? { color: "#ddd" }
                 : { color: "#ddd", marginBottom: "2em" }
             }
-            className="GreenConnected"
+            className="greenConnected"
           >
             Stay connected
             <ArrowForwardIcon />

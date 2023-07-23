@@ -2,11 +2,9 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import {
   Grid,
-  Box,
   Typography,
   Card,
   CardContent,
-  Paper,
   CardMedia,
   useMediaQuery,
   useTheme,
@@ -16,7 +14,6 @@ import { makeStyles } from "@material-ui/core";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import FullScreenLoad from "../../common/FullScreenLoad";
-import { useState } from "react";
 
 const useStyles = makeStyles({
   body: {

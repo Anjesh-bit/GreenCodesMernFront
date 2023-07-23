@@ -7,7 +7,7 @@ const ToggleButton = (props) => {
   const { values, toogle, handleToggle } = props;
   return (
     <>
-      <button onClick={() => handleToggle(!values)} className="ToggleButton">
+      <button onClick={() => handleToggle(!values)} className="toggleButton">
         {values ? (
           <GridOnIcon fontSize="small" />
         ) : (
