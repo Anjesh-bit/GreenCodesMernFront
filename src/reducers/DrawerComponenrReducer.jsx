@@ -5,7 +5,7 @@ import {
   ON_DRAWER_OPEN,
 } from "../constants/DrawerComponentConstants";
 
-const DrawerComponentReducers = (state, actions) => {
+const drawerComponentReducers = (state, actions) => {
   switch (actions.type) {
     case ON_DRAWER_OPEN:
       return { ...state, top: actions.top };
@@ -16,4 +16,4 @@ const DrawerComponentReducers = (state, actions) => {
   }
 };
 
-export default DrawerComponentReducers;
+export default drawerComponentReducers;

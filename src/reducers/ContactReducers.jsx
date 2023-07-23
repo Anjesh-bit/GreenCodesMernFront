@@ -16,7 +16,7 @@ import {
   ON_FETCH_ONE_INITIAL,
 } from "../constants/ContactConstants";
 
-const ContactReducer = (state = { contactdata: [] }, actions) => {
+const contactReducer = (state = { contactdata: [] }, actions) => {
   switch (actions.type) {
     case INITIAL_REQUEST:
       return { ...state, loading: true };
@@ -89,7 +89,7 @@ const updateContactReducers = (state = {}, actions) => {
 };
 
 export {
-  ContactReducer,
+  contactReducer,
   fetchAllContactReducer,
   fetchSingleContactsReducers,
   deleteContactReducers,

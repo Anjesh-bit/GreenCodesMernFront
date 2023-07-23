@@ -30,66 +30,75 @@ import about4 from "./About/about44.jpg";
 import about5 from "./About/about3.jpg";
 import greenCodesIcon from "./Icons/GreenLogo.png";
 
-export const greenIllustrations = [development, hosting, design, seo, test];
+export const greenIllustrations = { development, hosting, design, seo, test };
 
 export const greenLogo = greenCodesIcon;
 
 export const greentopSection = [
-  { greenHead: "Let's automate ourselves " },
-  { greenHead: "with" },
-  { greenHead: "Greencodes nepal" },
+  { id: 0, greenHead: "Let's automate ourselves " },
+  { id: 1, greenHead: "with" },
+  { id: 2, greenHead: "Greencodes nepal" },
 ];
 
 export const greenTeamsInfo = [
   {
+    id: 0,
     select: "teams",
     image: sresta,
     name: "Sresta Malla Thakuri",
     info: "Quality Assurance(QA)",
   },
   {
+    id: 1,
     select: "teams",
     image: anjesh,
     name: "Anjesh Thapa",
     info: "Web Developer and Designer",
   },
   {
+    id: 2,
     select: "teams",
     image: pratik,
     name: "Pratik Karki",
     info: "Hiring Manager(HR)",
   },
   {
+    id: 3,
     select: "teams",
     image: manoj,
     name: "Manoj Roka",
     info: "Web Developer and Designer",
   },
   {
+    id: 4,
     select: "teams",
     image: niraj,
     name: "Niraj Karki",
     info: "Web Developer and Designer",
   },
   {
+    id: 5,
     select: "teams",
     image: amit,
     name: "Amit Chapagain",
     info: "Web Developer and Supporter",
   },
   {
+    id: 6,
     select: "teams",
     image: gaurab,
     name: "Gaurab Poudel",
     info: "Web Developer",
   },
   {
+    id: 7,
     select: "teams",
     image: govinda,
     name: "Govinda Basnet",
     info: "UI/UX designer",
   },
   {
+    id: 8,
     select: "teams",
     image: dinesh,
     name: "Dinesh Subedi",
@@ -99,6 +108,7 @@ export const greenTeamsInfo = [
 
 export const greenProjectImages = [
   {
+    id: 0,
     select: "all",
     all: bradmoreBuilder,
     wordpress: "wordpress",
@@ -115,6 +125,7 @@ export const greenProjectImages = [
     authorurl3: "",
   },
   {
+    id: 1,
     select: "all",
     all: canyoFire,
     drupal: "drupal",
@@ -132,6 +143,7 @@ export const greenProjectImages = [
     authorurl3: canyoFeatured,
   },
   {
+    id: 2,
     select: "all",
     all: monsterPlanner,
     ci: "ci",
@@ -149,6 +161,7 @@ export const greenProjectImages = [
     authorurl3: "",
   },
   {
+    id: 3,
     select: "all",
     all: northWest,
     wordpress: "wordpress",
@@ -165,6 +178,7 @@ export const greenProjectImages = [
     authorurl3: "",
   },
   {
+    id: 4,
     select: "all",
     all: tensiPen,
     wordpress: "wordpress",
@@ -182,6 +196,7 @@ export const greenProjectImages = [
     authorurl3: "",
   },
   {
+    id: 5,
     select: "all",
     all: comalFlower,
     magento: "magento",
@@ -200,6 +215,7 @@ export const greenProjectImages = [
     authorurl3: "",
   },
   {
+    id: 6,
     select: "all",
     all: travelMoon,
     ci: "ci",
@@ -218,39 +234,44 @@ export const greenProjectImages = [
   },
 ];
 
-export const greenAbout = [
-  "Speculating Us?",
-  "Team with upsurge professionalism, and  culminated with copious projects ",
-  "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame.",
-];
+export const greenAbout = {
+  greenTextHeader: "Speculating Us?",
+  greenTextBody:
+    "Team with upsurge professionalism, and  culminated with copious projects ",
+  greenTextNextBody:
+    "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame.",
+};
 
-export const greenServices = [
-  "Web Development",
-  "Unique and Consistent web design",
-  "Web Hosting & Security",
-  "Hosting on different Platforms",
-  "Web Design",
-  "Design to meet your requirements",
-  "Seo & Smm",
-  "Optimal results for search page",
-];
+export const greenServices = {
+  greenServicesText00: "Web Development",
+  greenServicesText01: "Unique and Consistent web design",
+  greenServicesText02: "Web Hosting & Security",
+  greenServicesText03: "Hosting on different Platforms",
+  greenServicesText04: "Web Design",
+  greenServicesText05: "Design to meet your requirements",
+  greenServicesText06: "Seo & Smm",
+  greenServicesText07: "Optimal results for search page",
+};
 
-export const contactModel = [
-  "CONTACT",
-  "Get in Touch-Let's jam together",
-  "ADDRESS",
-  "Pepsicola-32,Kathmandu",
-  "Direct telephone enquiry: +9779865125784",
-  "info@greencodes.net",
-  "Search in skype with username: greencodesnepal @gmail.com",
-];
+export const contactModel = {
+  contact00: "CONTACT",
+  contact01: "Get in Touch-Let's jam together",
+  contact02: "ADDRESS",
+  contact03: "Pepsicola-32,Kathmandu",
+  contact04: "Direct telephone enquiry: +9779865125784",
+  contact05: "info@greencodes.net",
+  contact06: "Search in skype with username: greencodesnepal @gmail.com",
+};
 
-export const infoAbout = [
-  "More About Us",
-  "Green Codes is a team of professional, motivated and highly experienced developers from Nepal.",
-  "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame. Hence we are expertise in the field of creative Website Designing and Search Engine Optimization(SEO). As we are young and energetic technical savvies and hungry for latest innovation technologies on web, as a result we will apply all the technology evolution strategies in our projects.",
-  "Our smart work will often describe who we are!We are providing quality website development in different Content Management Systems (CMS) technologies around the globe. Therefore we work for the client’s satisfaction and will stand with you to grow your business organically. Running a business not only requires hard work but also requires effective smart work. We shall do both the works for an unbelievable cost!",
-];
+export const infoAbout = {
+  info00: "More About Us",
+  info01:
+    "Green Codes is a team of professional, motivated and highly experienced developers from Nepal.",
+  info02:
+    "In addition we believe in quality work and timely delivery.Most of all we love to work on challenging tasks and scalable development. We develop easy and interactive user interface with strong backed frame. Hence we are expertise in the field of creative Website Designing and Search Engine Optimization(SEO). As we are young and energetic technical savvies and hungry for latest innovation technologies on web, as a result we will apply all the technology evolution strategies in our projects.",
+  info03:
+    "Our smart work will often describe who we are!We are providing quality website development in different Content Management Systems (CMS) technologies around the globe. Therefore we work for the client’s satisfaction and will stand with you to grow your business organically. Running a business not only requires hard work but also requires effective smart work. We shall do both the works for an unbelievable cost!",
+};
 
 export const formValues = {
   client_fname: "",
@@ -280,6 +301,7 @@ export const listData = {
   projects: "Projects",
   contact: "Contact",
 };
+
 export const topBarImages = [about1, about3];
 
 export const aboutImages = [about1, about2, about3, about4, about5];

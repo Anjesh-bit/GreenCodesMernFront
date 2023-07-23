@@ -16,7 +16,7 @@ import {
   ON_UPDATE_FAIL,
 } from "../constants/BlogsSaveConstants";
 
-const BlogsSaveReducers = (state = { blogsData: [] }, actions) => {
+const blogsSaveReducers = (state = { blogsData: [] }, actions) => {
   switch (actions.type) {
     case ON_BLOGS_INITIAL_REQUEST:
       return { ...state, loading: true };
@@ -29,7 +29,7 @@ const BlogsSaveReducers = (state = { blogsData: [] }, actions) => {
   }
 };
 
-const BlogsFindAllReducers = (state = { blogsAllData: [] }, actions) => {
+const blogsFindAllReducers = (state = { blogsAllData: [] }, actions) => {
   switch (actions.type) {
     case ON_FETCH_ALL_INITIAL:
       return { ...state, loading: true };
@@ -42,7 +42,7 @@ const BlogsFindAllReducers = (state = { blogsAllData: [] }, actions) => {
   }
 };
 
-const BlogsFindByIdReducers = (state = { blogsSingleData: [] }, actions) => {
+const blogsFindByIdReducers = (state = { blogsSingleData: [] }, actions) => {
   switch (actions.type) {
     case ON_FETCH_ONE_INITIAL:
       return { ...state, loading: true };
@@ -55,7 +55,7 @@ const BlogsFindByIdReducers = (state = { blogsSingleData: [] }, actions) => {
   }
 };
 
-const BlogsUpdateReducers = (state = { blogsUpdatedData: [] }, actions) => {
+const blogsUpdateReducers = (state = { blogsUpdatedData: [] }, actions) => {
   switch (actions.type) {
     case ON_UPDATE_INTIAL:
       return { ...state, loading: true };
@@ -68,7 +68,7 @@ const BlogsUpdateReducers = (state = { blogsUpdatedData: [] }, actions) => {
   }
 };
 
-const BlogDeleteReducers = (state = { blogsDeletedData: [] }, actions) => {
+const blogDeleteReducers = (state = { blogsDeletedData: [] }, actions) => {
   switch (actions.type) {
     case ON_DELETE_INITIAL:
       return { ...state, loading: true };
@@ -82,9 +82,9 @@ const BlogDeleteReducers = (state = { blogsDeletedData: [] }, actions) => {
 };
 
 export {
-  BlogsSaveReducers,
-  BlogsFindAllReducers,
-  BlogsFindByIdReducers,
-  BlogsUpdateReducers,
-  BlogDeleteReducers,
+  blogsSaveReducers,
+  blogsFindAllReducers,
+  blogsFindByIdReducers,
+  blogsUpdateReducers,
+  blogDeleteReducers,
 };

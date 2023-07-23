@@ -5,7 +5,7 @@ import {
   ADMIN_LOGOUT,
 } from "../constants/AdminLoginConstants";
 
-const AdminLoginReducers = (state = { loginData: [] }, actions) => {
+const adminLoginReducers = (state = { loginData: [] }, actions) => {
   switch (actions.type) {
     case ADMIN_LOGIN_START:
       return { ...state, loading: false };
@@ -20,4 +20,4 @@ const AdminLoginReducers = (state = { loginData: [] }, actions) => {
   }
 };
 
-export { AdminLoginReducers };
+export { adminLoginReducers };

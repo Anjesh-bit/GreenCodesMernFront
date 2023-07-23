@@ -16,7 +16,7 @@ import {
   ON_UPDATE_DRAFTS_FAIL,
 } from "../constants/BlogsSaveDraftsConstant";
 
-const BlogsSaveDraftsReducers = (state = { blogsData: [] }, actions) => {
+const blogsSaveDraftsReducers = (state = { blogsData: [] }, actions) => {
   switch (actions.type) {
     case ON_BLOGS_DRAFTS_INITIAL_REQUEST:
       return { ...state, loading: true };
@@ -29,7 +29,7 @@ const BlogsSaveDraftsReducers = (state = { blogsData: [] }, actions) => {
   }
 };
 
-const BlogsFindAllDraftsReducers = (state = { blogsAllData: [] }, actions) => {
+const blogsFindAllDraftsReducers = (state = { blogsAllData: [] }, actions) => {
   switch (actions.type) {
     case ON_FETCH_ALL_DRAFTS_INITIAL:
       return { ...state, loading: true };
@@ -42,7 +42,7 @@ const BlogsFindAllDraftsReducers = (state = { blogsAllData: [] }, actions) => {
   }
 };
 
-const BlogsFindByIdDraftsReducers = (
+const blogsFindByIdDraftsReducers = (
   state = { blogsSingleData: [] },
   actions
 ) => {
@@ -58,7 +58,7 @@ const BlogsFindByIdDraftsReducers = (
   }
 };
 
-const BlogsUpdateDraftsReducers = (
+const blogsUpdateDraftsReducers = (
   state = { blogsUpdatedData: [] },
   actions
 ) => {
@@ -74,7 +74,7 @@ const BlogsUpdateDraftsReducers = (
   }
 };
 
-const BlogDeleteDraftsReducers = (
+const blogDeleteDraftsReducers = (
   state = { blogsDeletedData: [] },
   actions
 ) => {
@@ -91,9 +91,9 @@ const BlogDeleteDraftsReducers = (
 };
 
 export {
-  BlogsSaveDraftsReducers,
-  BlogsFindAllDraftsReducers,
-  BlogsFindByIdDraftsReducers,
-  BlogsUpdateDraftsReducers,
-  BlogDeleteDraftsReducers,
+  blogsSaveDraftsReducers,
+  blogsFindAllDraftsReducers,
+  blogsFindByIdDraftsReducers,
+  blogsUpdateDraftsReducers,
+  blogDeleteDraftsReducers,
 };

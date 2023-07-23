@@ -62,7 +62,15 @@ const Contact = () => {
   const dispatch = useDispatch();
   const matches = useMediaQuery(theme.breakpoints.down("xs"));
   const contactState = useSelector((state) => state.contact);
-
+  const {
+    contact00,
+    contact01,
+    contact02,
+    contact03,
+    contact04,
+    contact05,
+    contact06,
+  } = contactModel;
   const onhandleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -146,7 +154,7 @@ const Contact = () => {
               >
                 <CardContent>
                   <Typography variant="h1" className={cn(classes.h1)}>
-                    {contactModel[0]}
+                    {contact00}
                   </Typography>
                   <Typography
                     variant="h3"
@@ -154,24 +162,24 @@ const Contact = () => {
                     component="div"
                     gutterBottom
                   >
-                    {contactModel[1]}
+                    {contact01}
                   </Typography>
 
                   <Typography variant="h1" className={cn(classes.h1)}>
-                    {contactModel[2]}
+                    {contact02}
                   </Typography>
 
                   <Typography variant="h6">
-                    <small>{contactModel[3]}</small>
+                    <small>{contact03}</small>
                   </Typography>
                   <Typography variant="h6">
-                    <small>{contactModel[4]}</small>
+                    <small>{contact04}</small>
                   </Typography>
                   <Typography variant="h6">
-                    <small>{contactModel[5]}</small>
+                    <small>{contact05}</small>
                   </Typography>
                   <Typography variant="h6">
-                    <small>{contactModel[6]}</small>
+                    <small>{contact06}</small>
                   </Typography>
                 </CardContent>
               </Card>

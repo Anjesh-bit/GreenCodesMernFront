@@ -51,9 +51,9 @@ const useStyles = makeStyles({
 const Aboutinfo = () => {
   const classes = useStyles();
   const [indexAbout, setIndexAbout] = useState(0);
-
+  const { info00, info01, info02, info03 } = infoAbout;
   const handleNext = () => {
-    if (indexAbout != aboutImages.length - 1) {
+    if (indexAbout !== aboutImages.length - 1) {
       setIndexAbout(indexAbout + 1);
     } else if (indexAbout === aboutImages.length - 1) {
       setIndexAbout(0);
@@ -93,19 +93,19 @@ const Aboutinfo = () => {
                 }}
               >
                 <Typography variant="h6" className={cn(classes.h1)}>
-                  {infoAbout[0]}
+                  {info00}
                 </Typography>
                 <Typography
                   variant="h4"
                   style={{ paddingBottom: "1em", fontWeight: 600 }}
                 >
-                  {infoAbout[1]}
+                  {info01}
                 </Typography>
                 <Typography variant="body1" style={{ color: "#878a8f" }}>
-                  {infoAbout[2]}
+                  {info02}
                 </Typography>
                 <Typography variant="body1" style={{ color: "#878a8f" }}>
-                  {infoAbout[3]}
+                  {info03}
                 </Typography>
               </CardContent>
             </Card>

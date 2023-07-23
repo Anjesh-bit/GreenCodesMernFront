@@ -21,6 +21,7 @@ const useStyles = makeStyles({
     color: "#042825",
     paddingLeft: "3em",
   },
+
   h1: {
     fontSize: "0.9em",
     letterSpacing: "0.5em",
@@ -35,7 +36,7 @@ const About = () => {
   const theme = useTheme();
   const mediaXs = useMediaQuery(theme.breakpoints.down("xs"));
   const setOffsetY = useSelector((state) => state.parralx.scrollX);
-
+  const { greenTextHeader, greenTextBody, greenTextNextBody } = greenAbout;
   return (
     <div
       className={cn(classes.root)}
@@ -72,11 +73,13 @@ const About = () => {
                 component="div"
                 gutterBottom
               >
-                {greenAbout[0]}
+                {greenTextHeader}
               </Typography>
-
               <Typography variant="body1" style={{ color: "#878a8f" }}>
-                {greenAbout[2]}
+                {greenTextBody}
+              </Typography>
+              <Typography variant="body1" style={{ color: "#878a8f" }}>
+                {greenTextNextBody}
               </Typography>
             </CardContent>
             {/* <CardActions>

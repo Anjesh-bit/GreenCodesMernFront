@@ -2,7 +2,7 @@ import ProjectsActions from "../actions/ProjectsActions";
 import { PROJECT_DATA_FAIL } from "../constants/ProjectsConstants";
 import { PROJECT_DATA_SUCCESS } from "../constants/ProjectsConstants";
 
-const ProjectsReducers = (state = [{}], actions) => {
+const projectsReducers = (state = [{}], actions) => {
   switch (actions.type) {
     case PROJECT_DATA_SUCCESS:
       return { ...state, projectsdata: actions.payload };
@@ -13,4 +13,4 @@ const ProjectsReducers = (state = [{}], actions) => {
   }
 };
 
-export default ProjectsReducers;
+export default projectsReducers;

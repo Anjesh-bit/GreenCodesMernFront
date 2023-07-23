@@ -5,7 +5,7 @@ import {
   OPEN_MENU_MOBILE,
 } from "../constants/IconButtonConstants";
 
-export const IconButttonReducers = (state = {}, action) => {
+export const iconButttonReducers = (state = {}, action) => {
   switch (action.type) {
     case OPEN_MENU:
       return { ...state, openBtn: action.payload };

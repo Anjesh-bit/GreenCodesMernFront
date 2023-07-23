@@ -4,7 +4,7 @@ import {
   MODAL_ERROR,
 } from "../constants/ModelConstants";
 
-export const ModalReducers = (state = {}, action) => {
+export const modalReducers = (state = {}, action) => {
   switch (action.type) {
     case MODAL_OPEN:
       return { ...state, open: true };

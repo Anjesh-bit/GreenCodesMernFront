@@ -1,7 +1,7 @@
 import React from "react";
 import { SCROLL_X, SCROLL_X_ERROR } from "../constants/ParallexConstants";
 
-const ParralxReducers = (state = {}, actions) => {
+const parralxReducers = (state = {}, actions) => {
   switch (actions.type) {
     case SCROLL_X:
       return { ...state, scrollX: actions.payload };
@@ -12,4 +12,4 @@ const ParralxReducers = (state = {}, actions) => {
   }
 };
 
-export default ParralxReducers;
+export default parralxReducers;

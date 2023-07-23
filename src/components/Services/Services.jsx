@@ -1,15 +1,11 @@
 import React from "react";
 import {
   makeStyles,
-  Paper,
-  Box,
   Grid,
   Card,
   CardContent,
   Typography,
   CardMedia,
-  Button,
-  withStyles,
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
@@ -53,6 +49,19 @@ const Services = () => {
   const theme = useTheme();
   const matchesSm = useMediaQuery(theme.breakpoints.down("sm"));
   const matchesXs = useMediaQuery(theme.breakpoints.down("xs"));
+
+  const {
+    greenServicesText00,
+    greenServicesText01,
+    greenServicesText02,
+    greenServicesText03,
+    greenServicesText04,
+    greenServicesText05,
+    greenServicesText06,
+    greenServicesText07,
+  } = greenServices;
+  const { development, hosting, design, seo, test } = greenIllustrations;
+
   return (
     <div>
       <Grid
@@ -104,15 +113,15 @@ const Services = () => {
                 <CardMedia
                   component="img"
                   sx={{ width: 151, height: 700 }}
-                  image={greenIllustrations[0]}
+                  image={development}
                   alt="Development"
                 />
               </div>
               <Typography variant="h2" gutterBottom style={headings}>
-                {greenServices[0]}
+                {greenServicesText00}
               </Typography>
               <Typography varaint="body2" style={{ color: "#878a8f" }}>
-                {greenServices[1]}
+                {greenServicesText01}
               </Typography>
             </CardContent>
           </Card>
@@ -139,15 +148,15 @@ const Services = () => {
                 <CardMedia
                   component="img"
                   sx={{ width: 151 }}
-                  image={greenIllustrations[1]}
+                  image={hosting}
                   alt="Hosting"
                 />
               </div>
               <Typography variant="h2" gutterBottom style={headings}>
-                {greenServices[2]}
+                {greenServicesText02}
               </Typography>
               <Typography varaint="body2" style={{ color: "#878a8f" }}>
-                {greenServices[3]}
+                {greenServicesText03}
               </Typography>
             </CardContent>
           </Card>
@@ -174,15 +183,15 @@ const Services = () => {
                 <CardMedia
                   component="img"
                   sx={{ width: 151 }}
-                  image={greenIllustrations[2]}
+                  image={design}
                   alt="Design"
                 />
               </div>
               <Typography variant="h2" gutterBottom style={headings}>
-                {greenServices[4]}
+                {greenServicesText04}
               </Typography>
               <Typography varaint="body2" style={{ color: "#878a8f" }}>
-                {greenServices[5]}
+                {greenServicesText05}
               </Typography>
             </CardContent>
           </Card>
@@ -209,15 +218,15 @@ const Services = () => {
                 <CardMedia
                   component="img"
                   sx={{ width: 151 }}
-                  image={greenIllustrations[3]}
+                  image={seo}
                   alt="Live from space album cover"
                 />
               </div>
               <Typography variant="h2" gutterBottom style={headings}>
-                {greenServices[6]}
+                {greenServicesText06}
               </Typography>
               <Typography varaint="body2" style={{ color: "#878a8f" }}>
-                {greenServices[7]}
+                {greenServicesText07}
               </Typography>
             </CardContent>
           </Card>
